@@ -1,10 +1,11 @@
 import { lazy } from 'react'
+import { RouteObject } from 'react-router-dom'
 
 const Main = lazy(() => import('@/pages/main'))
 
 export default [
   {
     path: '/',
-    component: Main
+    element: <Main />
   }
-]
+] as RouteObject[]
